@@ -37,6 +37,5 @@ class MovieQuizTests: XCTestCase {
         }
         
         waitForExpectations(timeout: 2)
-        
     }
 }
