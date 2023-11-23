@@ -28,21 +28,24 @@ final class QuestionFactory: QuestionFactoryProtocol {
             
             let rating = Float(movie.rating) ?? 0
             
-            // реализуем случайные подстановки в вопрос (цифра рейтинга и слова "больше"/"меньше")
-            let randomNumberForRating = Float(Int.random(in: 5...8))
+            let correctAnswer: Bool
             
-            let randomWordForQeustion: String
+            // реализуем случайные подстановки в вопрос (цифра рейтинга и слова "больше"/"меньше")
+            let randomNumberForRating = Float.random(in: 5...8)
+            
+            let randomWordForQuestion: String
             let randomNumberForWord = Int.random(in: 0...10)
             if randomNumberForWord.isMultiple(of: 2) {
-                randomWordForQeustion = "меньше"
+                randomWordForQuestion = "меньше"
+                correctAnswer = rating < randomNumberForRating
             } else {
-                randomWordForQeustion = "больше"
+                randomWordForQuestion = "больше"
+                correctAnswer = rating > randomNumberForRating
             }
             
-            let text = "Рейтинг этого фильма \(randomWordForQeustion), чем \(Int(randomNumberForRating))?"
-            let correctAnswer = rating > randomNumberForRating
+            let text = "Рейтинг этого фильма \(randomWordForQuestion), чем \(Int(randomNumberForRating))?"
             
-            let question = QuizeQuestion(image: imageData,
+            let question = QuizQuestion(image: imageData,
                                          text: text,
                                          correctAnswer: correctAnswer)
             
