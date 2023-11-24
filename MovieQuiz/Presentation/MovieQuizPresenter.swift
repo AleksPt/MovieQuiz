@@ -95,9 +95,13 @@ final class MovieQuizPresenter: QuestionFactoryDelegate {
 
         viewController?.highlightImageBorder(isCorrectAnswer: isCorrect)
 
+        viewController?.yesButton.isEnabled = false
+        viewController?.noButton.isEnabled = false
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) { [weak self] in
             guard let self = self else { return }
             self.proceedToNextQuestionOrResults()
+            viewController?.yesButton.isEnabled = true
+            viewController?.noButton.isEnabled = true
         }
     }
 
