@@ -2,6 +2,8 @@
 
 MovieQuiz - это приложение с квизами о фильмах из топ-250 рейтинга и самых популярных фильмах по версии IMDb.
 
+В нём можно проходить квизы о фильмах из рейтинга Топ-250 IMDb. Чтобы его сделать, я работал(а) с Git, HTTP и REST, верстал(а) в Storyboard, а также написал(а) для него тесты. Стек: #InterfaceBuilder, #User Defaults, #MVC, #MVP, #URLSession, #URLRequest.
+
 ![preview](https://github.com/AleksPt/MovieQuiz/blob/main/preview.gif)
 
 ## **Ссылки**
