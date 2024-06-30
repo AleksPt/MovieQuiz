@@ -39,5 +39,5 @@ MovieQuiz - это приложение с квизами о фильмах из
 + [**Шрифты**](https://code.s3.yandex.net/Mobile/iOS/Fonts/MovieQuizFonts.zip)
 
 ### 📸 Скриншоты:
-| ![preview](https://github.com/AleksPt/MovieQuiz/blob/main/1.png) |![preview](https://github.com/AleksPt/MovieQuiz/blob/main/2.png) | ![preview](https://github.com/AleksPt/MovieQuiz/blob/main/3.png)
+| ![preview](https://github.com/AleksPt/MovieQuiz/blob/main/01.png) |![preview](https://github.com/AleksPt/MovieQuiz/blob/main/02.png) | ![preview](https://github.com/AleksPt/MovieQuiz/blob/main/03.png)
 |-------|----------|---------|
